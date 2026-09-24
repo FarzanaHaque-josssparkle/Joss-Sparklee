@@ -1,0 +1,532 @@
+/* ==========================================
+   1. RESET & GENERAL STYLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0b0d0c;
+    color: #ffffff;
+}
+
+:root {
+    --primary-yellow: #fbc02d;
+    --dark-yellow: #f5a623;
+}
+
+/* ==========================================
+   2. NAVBAR & LOGO FIX
+   ========================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #0b0d0c;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Sizing Fix - Strict Rules */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img,
+.nav-logo {
+    height: 45px !important; /* লোগোর উচ্চতা সঠিক সাইজে ফিক্স করা */
+    width: auto !important;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.active, 
+.nav-links a:hover {
+    color: var(--primary-yellow);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-icon {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--primary-yellow);
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.lang-switch {
+    font-size: 12px;
+    border: 1px solid #444;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* ==========================================
+   3. HERO SECTION
+   ========================================== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #0b0d0c 0%, #1a1e1b 100%);
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 45%;
+}
+
+.tagline {
+    color: var(--primary-yellow);
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 15px 0;
+    font-weight: 900;
+}
+
+.hero h1 .highlight {
+    color: var(--primary-yellow);
+}
+
+.sub-heading {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #eee;
+}
+
+.description {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--primary-yellow);
+    color: #000;
+}
+
+.btn-secondary {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.hero-features {
+    display: flex;
+    gap: 20px;
+    border-top: 1px solid #333;
+    padding-top: 25px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-yellow {
+    color: var(--primary-yellow);
+    font-size: 20px;
+}
+
+.feature-item strong {
+    display: block;
+    font-size: 14px;
+}
+
+.feature-item span {
+    font-size: 11px;
+    color: #888;
+}
+
+/* Big Hero Image Styling */
+.hero-image {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ==========================================
+   4. PRODUCTS SECTION
+   ========================================== */
+.products-section {
+    padding: 80px 8%;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: var(--dark-yellow);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.card-body {
+    padding-top: 15px;
+}
+
+.brand-tag {
+    font-size: 10px;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.card-body h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-bottom: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    margin-right: 8px;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-yellow);
+}
+
+.qty-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    width: fit-content;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.qty-selector button {
+    border: none;
+    background: none;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.qty-selector input {
+    width: 30px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    background-color: var(--primary-yellow);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--dark-yellow);
+}
+
+/* ==========================================
+   5. FOOTER
+   ========================================== */
+.footer {
+    background-color: #080909;
+    color: #777;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+}/* CART MODAL STYLES */
+.cart-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.cart-modal-overlay.active {
+    display: flex;
+}
+
+.cart-modal {
+    background: #ffffff;
+    color: #333;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.cart-header {
+    background: #0b0d0c;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.close-cart-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-cart-btn:hover {
+    color: #fff;
+}
+
+.cart-body {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.empty-cart-msg {
+    text-align: center;
+    color: #888;
+}
+
+.cart-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-info strong {
+    display: block;
+    font-size: 15px;
+}
+
+.cart-item-info span {
+    font-size: 13px;
+    color: #666;
+}
+
+.remove-item-btn {
+    color: #ff4d4d;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cart-footer {
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.checkout-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+}
+/* CHECKOUT FORM STYLES IN MODAL */
+.checkout-form-container {
+    padding: 15px 20px 5px 20px;
+    border-top: 1px solid #eee;
+    background: #fafafa;
+}
+
+.checkout-form-container h4 {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.modal-form-group {
+    margin-bottom: 10px;
+}
+
+.modal-form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+.modal-form-group input,
+.modal-form-group select,
+.modal-form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+    outline: none;
+}
+
+.modal-form-group input:focus,
+.modal-form-group select:focus,
+.modal-form-group textarea:focus {
+    border-color: #fbc02d;
+}
+
+.cart-summary-rows p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.cart-summary-rows hr {
+    border: none;
+    border-top: 1px dashed #ccc;
+    margin: 8px 0;
+}
+
+.cart-summary-rows .total-row {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
