@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joss Sparkle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="joss-sparkle-logo.png">JOSS</img>
+            <span class="logo-sub">SPARKLE</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <div class="cart-icon">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span class="cart-badge">0</span>
+            </div>
+            <div class="lang-switch">বাংলা | EN</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tagline">ORIGINAL EXTRAJOSS</span>
+            <h1>POWER UP<br><span class="highlight">YOUR DAY</span></h1>
+            <p class="sub-heading">More Energy • Better Focus • Brighter You</p>
+            <p class="description">
+                Joss Sparkle brings you the original ExtraJoss energy drink, now available in Bangladesh. Choose your favourite flavour and stay active every day.
+            </p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Shop Now</a>
+                <a href="#" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+            </div>
+            
+            <div class="hero-features">
+                <div class="feature-item">
+                    <i class="fa-solid fa-bolt icon-yellow"></i>
+                    <div>
+                        <strong>৳180</strong>
+                        <span>Special Price</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-box icon-yellow"></i>
+                    <div>
+                        <strong>6</strong>
+                        <span>Sachets / Box</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-shield-halved icon-yellow"></i>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Original Product</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-truck-fast icon-yellow"></i>
+                    <div>
+                        <strong>COD</strong>
+                        <span>Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="hero-products.png" alt="ExtraJoss Energy Drink Packets">
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <div class="section-title">
+            <span class="section-subtitle">OUR FLAVOURS</span>
+            <h2>Choose Your Favourite</h2>
+            <p>Three refreshing flavours. One energetic experience.</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="card-img">
+                    <img src="mango-pack.png" alt="ExtraJoss Mango">
+                </div>
+                <div class="card-body">
+                    <span class="brand-tag">EXTRAJOSS</span>
+                    <h3>Mango</h3>
+                    <div class="price">
+                        <span class="old-price">৳210</span>
+                        <span class="current-price">৳180</span>
+                    </div>
+                    <div class="qty-selector">
+                        <button>-</button>
+                        <input type="text" value="1" readonly>
+                        <button>+</button>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-img">
+                    <img src="orange-pack.png".png" alt="ExtraJoss Orange">
+                </div>
+                <div class="card-body">
+                    <span class="brand-tag">EXTRAJOSS</span>
+                    <h3>Orange</h3>
+                    <div class="price">
+                        <span class="old-price">৳210</span>
+                        <span class="current-price">৳180</span>
+                    </div>
+                    <div class="qty-selector">
+                        <button>-</button>
+                        <input type="text" value="1" readonly>
+                        <button>+</button>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card-img">
+                    <img src="grape-pack.png" alt="ExtraJoss Grape">
+                </div>
+                <div class="card-body">
+                    <span class="brand-tag">EXTRAJOSS</span>
+                    <h3>Grape</h3>
+                    <div class="price">
+                        <span class="old-price">৳210</span>
+                        <span class="current-price">৳180</span>
+                    </div>
+                    <div class="qty-selector">
+                        <button>-</button>
+                        <input type="text" value="1" readonly>
+                        <button>+</button>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT US SECTION -->
+    <section class="about-section" id="about">
+        <div class="section-title">
+            <span class="section-subtitle">WHO WE ARE</span>
+            <h2>About Joss Sparkle</h2>
+            <p>Your trusted source for 100% original ExtraJoss energy drinks in Bangladesh.</p>
+        </div>
+        <div class="about-content">
+            <p>Joss Sparkle is dedicated to delivering original, fresh, and high-quality ExtraJoss energy drink sachets across Bangladesh. Whether you need focus for work, study, or sports, we bring instant refreshing energy straight to your doorstep.</p>
+        </div>
+    </section>
+
+    <!-- DELIVERY & CALCULATOR SECTION -->
+    <section class="delivery-section" id="delivery">
+        <div class="section-title">
+            <span class="section-subtitle">EXPRESS DELIVERY</span>
+            <h2>Calculate Delivery Charge</h2>
+            <p>Select your location to check delivery charges and estimated time.</p>
+        </div>
+
+        <div class="delivery-box">
+            <div class="form-group">
+                <label for="delivery-area"><i class="fa-solid fa-location-dot"></i> Select Delivery Area:</label>
+                <select id="delivery-area">
+                    <option value="60">Inside Dhaka (৳60)</option>
+                    <option value="100">Sub-Dhaka / Savar / Gazipur (৳100)</option>
+                    <option value="120">Outside Dhaka (৳120)</option>
+                </select>
+            </div>
+
+            <div class="delivery-summary">
+                <p><span>Delivery Charge:</span> <strong id="charge-text">৳60</strong></p>
+                <p><span>Estimated Time:</span> <strong id="time-text">24 - 48 Hours</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & WHATSAPP SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="section-title">
+            <span class="section-subtitle">GET IN TOUCH</span>
+            <h2>Order & Support</h2>
+            <p>Have questions or want to place a quick order?</p>
+        </div>
+
+        <div class="contact-buttons">
+            <a href="https://wa.me/8801521490746
+            text=Hello!%20I%20want%20to%20order%20ExtraJoss." target="_blank" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61584009447649" target="_blank" class="btn btn-messenger">
+                <i class="fa-brands fa-facebook-messenger"></i> Messenger Us
+            </a>
+            <a href="tel:+8801521490746" class="btn btn-phone">
+                <i class="fa-solid fa-phone"></i> Call: +880 1521490746
+            </a>
+        </div>
+    </section>
+<!-- CART MODAL POPUP -->
+<div <!-- CART MODAL POPUP WITH CHECKOUT FORM -->
+<div class="cart-modal-overlay" id="cartModal">
+    <div class="cart-modal">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-basket-shopping"></i> Your Shopping Cart</h3>
+            <span class="close-cart-btn" id="closeCart">&times;</span>
+        </div>
+        
+        <div class="cart-body" id="cartBody">
+            <p class="empty-cart-msg">Your cart is empty.</p>
+        </div>
+
+        <!-- CHECKOUT FORM (Cart empty na thakle eita dekhabe) -->
+        <div class="checkout-form-container" id="checkoutFormContainer" style="display: none;">
+            <h4><i class="fa-solid fa-truck"></i> Delivery & Customer Details</h4>
+            
+            <div class="modal-form-group">
+                <label>Select Delivery Area:</label>
+                <select id="modalDeliveryArea">
+                    <option value="60">Inside Dhaka (৳60)</option>
+                    <option value="100">Sub-Dhaka / Savar / Gazipur (৳100)</option>
+                    <option value="120">Outside Dhaka (৳120)</option>
+                </select>
+            </div>
+
+            <div class="modal-form-group">
+                <input type="text" id="custName" placeholder="Your Full Name *" required>
+            </div>
+
+            <div class="modal-form-group">
+                <input type="tel" id="custPhone" placeholder="Phone Number *" required>
+            </div>
+
+            <div class="modal-form-group">
+                <textarea id="custAddress" placeholder="Full Delivery Address *" rows="2" required></textarea>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-summary-rows">
+                <p><span>Subtotal:</span> <strong id="cartSubtotal">৳0</strong></p>
+                <p><span>Delivery Charge:</span> <strong id="cartDeliveryCharge">৳60</strong></p>
+                <hr>
+                <p class="total-row"><span>Total Payable:</span> <strong id="cartTotalAmount">৳60</strong></p>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="confirmOrderBtn">
+                <i class="fa-brands fa-whatsapp"></i> Confirm Order 
+            </button>
+        </div>
+    </div>
+</div>
+    <div class="cart-modal">
+        <div class="cart-body" id="cartBody">
+            <p class="empty-cart-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total Amount:</span>
+                <strong id="cartTotalAmount">৳0</strong>
+            </div>
+            <a href="https://wa.me/8801521490746" target="_blank" class="btn btn-primary checkout-btn">
+                <i class="fa-brands fa-whatsapp"></i> Order via WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <p>© 2026 Joss Sparkle. All Rights Reserved.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html
